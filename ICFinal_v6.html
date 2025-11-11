@@ -1,0 +1,44 @@
+</html>
+<html><head>
+    <title>Luke Valerio - Final project</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Final project of Integrated circuit design (CENG465, undergraduate class), Spring 2025: design, simulate, and verify flip flops at layout level from circuits in IEEE papers</h1>
+    <h3> Luke Valerio</h3>
+    <h3>Instructor: Peiyi Zhao, Ph.d, Associate Professor, <a href="www1.chapman.edu/~zhao">www1.chapman.edu/~zhao</a></h3>
+    <h3></h3>
+    <p> IC design in this project was performed using the following tools:<br>
+Cadence Virtuoso for schematic and layout creation, Synopsys Hspice for simulation, Siemens Calibre for layout verification.<br></p>
+<p>The process involved designing a flip-flop circuit based on an IEEE paper. The design flow included the following:<br>
+Schematic capture in Virtuoso,  followed by layout creation.<br>
+Design Rule Check (DRC) and Layout Versus Schematic (LVS) verification were conducted using Calibre to ensure layout correctness and connectivity matching the schematic.<br>
+Parasitic capacitances were extracted using Calibre's parasitic extraction (PEX) feature integrated within Virtuoso.<br>
+Post-layout simulations were carried out in Hspice to verify circuit functionality through waveform analysis.<br>
+Power consumption was measured at different processing corners, operating at 1 GHz frequency, 1 V supply voltage, and 10% switching activity, targeting a 45 nm technology node.<br>
+This project involved considerable debugging.<br></p>
+<p>Acknowledgement: Thanks to Dr. Michael Fahy for his strong support of the above CAD tools!</p>
+    <h3><a href="https://ieeexplore.ieee.org/document/9432755">Paper 1</a>: G. Shin, E. Lee, J. Lee, Y. Lee and Y. Lee, "An Ultra-Low-Power Fully-Static Contention-Free Flip-Flop With Complete Redundant Clock Transition and Transistor Elimination," in IEEE Journal of Solid-State Circuits, vol. 56, no. 10, pp. 3039-3048, Oct. 2021.</h3>
+<p> Function: Reduces power consumption by reducing clock signals through only updating the clkb signal if there is a change to the input D </p>
+
+    <p>Here is the vertical schematic:</p>
+    <img src="REFF_VSchematic.png" width="939" height="613" alt="Vertical Schematic">
+    <p>Here is the horizontal layout I created:</p>
+    <img src="REFF_HLayout.png" width="939" height="613" alt="Layout">
+    <p>Here is the layout's waveform:</p>
+    <img src="REFF_Waveform.png" width="939" height="613" alt="Waveform">
+    
+    
+    
+    <h3><a href="https://ieeexplore.ieee.org/document/9374569">Paper 2</a>: H. You, J. Yuan, Z. Yu and S. Qiao, "Low-Power Retentive True Single-Phase-Clocked Flip-Flop With Redundant-Precharge-Free Operation," in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 5, pp. 1022-1032, May 2021.</h3>
+<p> Function: Reduces power consumption by eliminating redundant precharge operations and enabling retentive, true single-phase-clock operationting the clkb signal if there is a change to the input D </p>
+
+    <p>Here is the vertical schematic:</p>
+    <img src="S2CFF_VSchematic.png" alt="Vertical Schematic">
+    <p>Here is the horizontal layout I created:</p>
+    <img src="S2CFF_HLayout.png" width="939" height="613" alt="Layout">
+    <p>Here is the layout's waveform:</p>
+    <img src="S2CFF_Waveform.png" width="939" height="613" alt="Waveform">
+    
+  
+</body></html>
